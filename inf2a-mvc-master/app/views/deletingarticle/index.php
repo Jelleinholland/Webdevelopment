@@ -10,7 +10,7 @@ include __DIR__ . '/../footer.php';
 			<input type="text" name="title" value="">
 		
 		<div class="input-group">
-			<button class="btn" type="submit" name="Btnadd" ></button>
+			<button class="btn" type="submit" name="Btnadd" value="Delete" ></button>
 		</div>
 		
 	</form>
