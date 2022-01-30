@@ -8,7 +8,7 @@ if(getenv('DATABASE_URL') != ""){
     $database = ltrim($dbtops["path"], '/');
 }
 else{
-    $type = "mysql"
+    $type = "mysql";
     $servername = "mysql";
     $username = "root";
     $password = "secret123";
