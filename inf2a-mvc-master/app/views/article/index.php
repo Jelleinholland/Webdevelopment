@@ -22,7 +22,7 @@ include __DIR__ . '/../footer.php';
                     const header = document.createElement('h2');
                     const posted_at_container = document.createElement('p');
                     const posted_at = document.createElement('i');
-                    const paragraph = document.createElement('p');\
+                    const paragraph = document.createElement('p');
                     const editbutton = document.createElement('button');
                     const deletebutton = document.createElement('button');
 
