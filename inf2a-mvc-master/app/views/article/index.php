@@ -24,17 +24,23 @@ include __DIR__ . '/../footer.php';
                     const posted_at = document.createElement('i');
                     const paragraph = document.createElement('p');
                     const editbutton = document.createElement('button');
+                    const deletebutton = document.createElement('button');
                    
                     header.innerHTML = article.title;
                     posted_at.innerHTML = article.posted_at;
                     paragraph.innerHTML = article.content;
                     editbutton.innerText = "edit article";
+                    deletebutton.innerText = "delete article";
+
+                    editbutton.onclick.window.location.href='/views/updatingarticle/index.php' + article.id;
+                    deletebutton.onclick.window.location.href='/views/deletingartcile/index.php' + article.id;
                     
                     posted_at_container.appendChild(posted_at); 
                     container.appendChild(header);
                     container.appendChild(posted_at_container);
                     container.appendChild(paragraph);
                     container.appendChild(editbutton);
+                    container.appendChild(deletebutton);
                    
                     document.getElementById('articlecontainer').appendChild(container);
                 });
@@ -43,6 +49,13 @@ include __DIR__ . '/../footer.php';
             .catch(error => console.log(error));
         }
         Fetcharticles();
+
+        function editarticle(){
+
+        }
+        function delete article(){
+
+        }
     </script>
     </body>
 </html>
