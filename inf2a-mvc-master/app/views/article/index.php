@@ -49,13 +49,6 @@ include __DIR__ . '/../footer.php';
             .catch(error => console.log(error));
         }
         Fetcharticles();
-
-        function editarticle(){
-
-        }
-        function delete article(){
-
-        }
     </script>
     </body>
 </html>
