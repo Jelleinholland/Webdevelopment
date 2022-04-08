@@ -13,6 +13,7 @@ include __DIR__ . '/../footer.php';
 			<?php
 				foreach($artilcelist as $article) { ?>
 				<option value="<?= $article['id'] ?>"><?= $article['title'] ?></option>
+				<?var_dump($article)?>
 			<?php
 				} ?>
 			</select>
