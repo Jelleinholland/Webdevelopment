@@ -2,6 +2,7 @@
 include __DIR__ . '/../header.php';
 echo "<h1>Deleting articles page!</h1>";
 include __DIR__ . '/../footer.php';
+var_dump($artilcelist)
 ?>
 <body>
 <form method="post" action="/article/articleDelete" >
@@ -13,7 +14,7 @@ include __DIR__ . '/../footer.php';
 			<?php
 				foreach($artilcelist as $article) { ?>
 				<option value="<?= $article['id'] ?>"><?= $article['title'] ?></option>
-				<?var_dump($article)?>
+			
 			<?php
 				} ?>
 			</select>

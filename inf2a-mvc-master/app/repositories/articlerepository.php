@@ -76,5 +76,4 @@ class ArticleRepository extends Repository {
         }
     }
 
-
 }
