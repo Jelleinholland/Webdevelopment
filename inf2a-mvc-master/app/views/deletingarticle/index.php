@@ -7,8 +7,16 @@ include __DIR__ . '/../footer.php';
 <form method="post" action="/article/articleDelete" >
 		<div class="input-group">
 			<label>Title</label>
-			<input type="text" name="title" value="">
-		
+			<!-- <input type="text" name="title" value=""> -->
+			<select name="deleting" id="deleting">
+			<option selected="selected">Choose one</option>
+			<?php
+				foreach($artilceList as $artilce) { ?>
+				<option value="<?= $name['id'] ?>"><?= $name['title'] ?></option>
+			<?php
+				} ?>
+			</select>
+		</div>	
 		<div class="input-group">
 			<button class="btn" type="submit" name="Btnadd" >Delete</button>
 		</div>

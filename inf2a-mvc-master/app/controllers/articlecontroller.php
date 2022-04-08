@@ -35,6 +35,7 @@ class ArticleController
     public function deletingarticle()
     {
         require __DIR__ . '/../views/deletingarticle/index.php';
+        $artilceList = $this->articleService->getAll();
     }
     public function articleAdd()
     {
