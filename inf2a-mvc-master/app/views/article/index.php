@@ -23,22 +23,19 @@ include __DIR__ . '/../footer.php';
                     const posted_at_container = document.createElement('p');
                     const posted_at = document.createElement('i');
                     const paragraph = document.createElement('p');
+                    const editbutton = document.createElement('button');
                    
-
                     header.innerHTML = article.title;
                     posted_at.innerHTML = article.posted_at;
                     paragraph.innerHTML = article.content;
-                   
-
-                   
-
-                    posted_at_container.appendChild(posted_at);
+                    editbutton.innerText = "edit article";
                     
+                    posted_at_container.appendChild(posted_at); 
                     container.appendChild(header);
                     container.appendChild(posted_at_container);
                     container.appendChild(paragraph);
+                    container.appendChild(editbutton);
                    
-
                     document.getElementById('articlecontainer').appendChild(container);
                 });
                 console.log(articles)
