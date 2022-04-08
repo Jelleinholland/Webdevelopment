@@ -12,7 +12,7 @@ include __DIR__ . '/../footer.php';
 <script>
         function Fetcharticles(){
             
-            fetch('http://localhost/api/article')
+            fetch('/api/article')
             .then(result => result.json())
             .then(articles => {
                 //console.log('test');
