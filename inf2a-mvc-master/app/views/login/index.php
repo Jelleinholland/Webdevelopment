@@ -10,13 +10,17 @@ include __DIR__ . '/../footer.php';
      	<?php if (isset($_GET['error'])) { ?>
      		<p class="error"><?php echo $_GET['error']; ?></p>
      	<?php } ?>
-     	<label>User Name</label>
-     	<input type="text" name="Username" placeholder="User Name"><br>
-
-     	<label>Password</label>
-     	<input type="password" name="Password" placeholder="Password"><br>
-
-     	<button name="submit" type="submit">Login</button>
+		 <div class="input-group">
+		 	<label>User Name</label>
+     		<input type="text" name="Username" placeholder="User Name"><br>
+		</div>
+		<div class="input-group">
+			<label>Password</label>
+			<input type="password" name="Password" placeholder="Password"><br>
+		</div>
+		<div class="input-group">
+			<button class="btn" name="submit" type="submit">Login</button>
+		</div>     	
      </form>
 </body>
 </html>
