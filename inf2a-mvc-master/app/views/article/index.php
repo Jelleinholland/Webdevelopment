@@ -32,8 +32,8 @@ include __DIR__ . '/../footer.php';
                     editbutton.innerText = "edit article";
                     deletebutton.innerText = "delete article";
 
-                    editbutton.onclick = "window.location.href='/article/addingarticle' + article.id";
-                    deletebutton.onclick = "window.location.href='/article/deletingarticle' + article.id";
+                    editbutton.onclick = "window.location.href= /article/addingarticle";
+                    deletebutton.onclick = "window.location.href= /article/deletingarticle";
                     
                     posted_at_container.appendChild(posted_at); 
                     container.appendChild(header);
