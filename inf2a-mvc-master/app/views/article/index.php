@@ -33,7 +33,7 @@ include __DIR__ . '/../footer.php';
                     deletebutton.innerText = "delete article";
 
                     editbutton.onclick = window.location.href='/views/updatingarticle/index.php' + article.id;
-                    deletebutton.onclick =window.location.href='/views/deletingartcile/index.php' + article.id;
+                    deletebutton.onclick = window.location.href='/views/deletingarticle/index.php' + article.id;
                     
                     posted_at_container.appendChild(posted_at); 
                     container.appendChild(header);
