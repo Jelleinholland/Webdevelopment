@@ -30,11 +30,11 @@ include __DIR__ . '/../footer.php';
                     posted_at.innerHTML = article.posted_at;
                     paragraph.innerHTML = article.content;
                     posted_at_container.appendChild(posted_at);
-                    article.appendChild(editbutton)
-                    article.appendChild(deletebutton)
+                    article.appendChild(editbutton);
+                    article.appendChild(deletebutton);
 
-                    editbutton.innerText = "edit article"
-                    deletebutton.innerText = "delete article"
+                    editbutton.innerText = "edit article";
+                    deletebutton.innerText = "delete article";
 
                     container.appendChild(header);
                     container.appendChild(posted_at_container);
