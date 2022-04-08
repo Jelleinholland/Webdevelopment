@@ -11,8 +11,8 @@ include __DIR__ . '/../footer.php';
 			<select name="deleting" id="deleting">
 			<option selected="selected">Choose one</option>
 			<?php
-				foreach($artilceList as $artilce) { ?>
-				<option value="<?= $name['id'] ?>"><?= $name['title'] ?></option>
+				foreach($artilcelist as $article) { ?>
+				<option value="<?= $article['id'] ?>"><?= $article['title'] ?></option>
 			<?php
 				} ?>
 			</select>
